@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Styled Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Page</h1>
+  </header>
+  
+  <section>
+    <h2>About Me</h2>
+    <p>This section is all about me and what I love to do.</p>
+  </section>
+  
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading books</li>
+      <li>Playing guitar</li>
+      <li>Exploring nature</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>Goals for This Year</h2>
+    <ol>
+      <li>Learn a new programming language</li>
+      <li>Build a personal portfolio</li>
+      <li>Travel to two new countries</li>
+    </ol>
+  </section>
+  
+  <footer>
+    <p>&copy; <span id="current-year"></span> ALi AL-kheder. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('current-year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  </script>
+</body>
+</html>

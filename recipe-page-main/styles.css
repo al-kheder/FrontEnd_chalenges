@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(30, 18%, 87%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: hsl(0,0%,0%);
+    padding: 5% 20%;
+}
+
+.container{
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: hsl(0,0%,100%);
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: inherit;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;    
+}
+.header h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(0,0%,0%);
+    margin: 10px 0;
+    background-color: hsl(0,0%,100%);
+}
+.content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0,0%,0%);
+    margin: 10px 0;
+    background-color: hsl(0,0%,100%);
+}
+.content div{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.preparation-time-section {
+    background-color: #ffebee; /* Light rose background */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 20px; /* Space between the border and the content */
+    margin: 20px 0; /* Optional: Space around the section */
+  }
+  
+  .preparation-time-section h4 {
+    color: #e91e63; /* Rose color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    background-color: inherit;
+}
+  
+  .preparation-time-section ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent the bullet points */
+    margin: 0; /* Remove default margin */
+    background-color: inherit;
+}
+  
+  .preparation-time-section li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Dark text color */
+    background-color: inherit;
+}
+.preparation-time-section li::marker{
+    color: #e91e63;
+}
+.preparation-time-section strong {
+    /* Rose color for the strong text */
+    background-color: inherit;
+}
+  .preparation-time-section:hover {
+    background-color: #fce4ec; /* Slightly darker rose on hover */
+    border-color: #c2185b; /* Darker rose border on hover */
+  }
+
+  div.ingredients-section {
+    background-color:white; /* Light green background */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 20px; /* Space between the border and the content */
+    margin: 20px 0; /* Optional: Space around the section */ 
+    height: 100%; 
+}
+
+.ingredients-section .ingredient-header{
+    color:brown;
+    background-color: inherit;
+}
+.ingredients-section li::marker{
+    color: green;
+}
+.ingredients-section ul ,li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Dark text color */
+    background-color:inherit;
+}
+
+hr{
+    width: 100%;
+    margin: 0 auto;
+    color: #333;
+}
+div.instructions-section {
+    background-color: white; /* Light green background */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 20px; /* Space between the border and the content */
+    margin: 20px 0; /* Optional: Space around the section */
+  }
+  
+  .instructions-section h3 {
+    color:brown; /* Green color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    background-color: inherit;
+}
+  
+  .instructions-section ol {
+    list-style-type: decimal; /* Numbered list */
+    padding-left: 20px; /* Indent the list */
+    margin: 0; /* Remove default margin */
+    background-color: inherit;
+}
+
+.instructions-section li::marker{
+    color: brown;
+    font-weight: bold;
+    
+}
+  
+  .instructions-section ol li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Dark text color */
+    background-color: inherit;
+    padding-left: 10px;
+}
+.instructions-section strong {
+    /* Green color for the strong text */
+    background-color: inherit;
+}
+
+div.nutritions-section{
+  background-color: white;
+}
+
+.nutritions-section h3{
+  color: brown;
+  background-color: inherit;
+  letter-spacing: 1px;
+}
+
+
+table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Remove spacing between cells */
+    text-align: center; /* Center-align all text */
+  }
+  
+  thead th {
+    background-color:white; /* Light gray background for the header */
+    padding: 10px; /* Add padding to the header cells */
+  }
+  
+  tbody td, tfoot td {
+    padding: 10px; /* Add padding to the body and footer cells */
+    background-color: white;
+  }
+  
+  /* Style the first column (black text) */
+  tbody td:first-child, tfoot td:first-child {
+    color: black; /* Black text for the first column */
+    font-weight: bold; /* Optional: Make the text bold */
+  }
+  
+
+  /* Style the second column (brown text) */
+  tbody td:last-child, tfoot td:last-child {
+    color: #8b4513; /* Brown text for the second column */
+    font-weight: bold;
+  }
+  
+  /* Add borders to the table */
+  table, th, td {
+    border-bottom: 1px solid #494949; /* Brown border at the bottom */
+  }
+
+  footer {
+    position: relative;
+    background-color:white;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0px;
+    
+  }
+  footer div{
+    background-color: white;
+  }
+  
+  .copyright p {
+
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+    background-color: white;
+  }
+  .copyright span{
+    background-color: white;
+  }

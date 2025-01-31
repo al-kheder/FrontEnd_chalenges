@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(45deg, #ff7eb3, #ff758c);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Titles */
+header h1:hover {
+  color: #fff500;
+  transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+section:nth-of-type(1) {
+  background: linear-gradient(120deg, #ffecd2, #fcb69f);
+}
+
+section:nth-of-type(2) {
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+}
+
+section:nth-of-type(3) {
+  background: linear-gradient(120deg, #d4fc79, #96e6a1);
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  color: #444;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+h2:hover {
+  color: #ff758c;
+  transform: scale(1.05);
+}
+
+
+p, ul, ol {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+
+footer {
+  background: linear-gradient(45deg, #333, #555);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
