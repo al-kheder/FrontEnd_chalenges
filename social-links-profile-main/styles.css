@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    margin: 0 ;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10% 0 2px 0;
+    color: hsl(0, 0%, 100%);
+    height: 100vh;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 5px;
+}
+header img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+header h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+header .location {
+    font-size: 1.2em;
+    margin:5px;
+    color:hsl(75, 94%, 57%)
+}
+header .description {
+    font-size: 1.2em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    width: 30%;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 5px;
+
+}
+.container  a{
+    color: white;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.container a:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+.container a:active {
+    background-color: hsl(75, 94%, 57%);
+    color: #000;
+}
