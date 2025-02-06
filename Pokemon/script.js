@@ -6,7 +6,12 @@ async function searchPokemon() {
     const infoElement = document.getElementById("pokemonInfo");
 
     if (!pokemonName) {
-        alert("Please enter a Pokémon name!");
+        const errorElement = document.createElement("div");
+        errorElement.innerHTML = "Please enter a Pokémon name.";
+        errorElement.style.color = "red";
+        pokemonDisplay.innerHTML = ""; 
+        pokemonDisplay.appendChild(errorElement);
+        pokemonDisplay.style.display = "block";
         return;
     }
 
@@ -24,10 +29,10 @@ async function searchPokemon() {
         imageElement.alt = data.name;
         infoElement.textContent = `Height: ${data.height}, Weight: ${data.weight}, Base Experience: ${data.base_experience}`;
 
-        pokemonDisplay.style.display = "block"; // Show the Pokémon card
+        pokemonDisplay.style.display = "block";
 
     } catch (error) {
         alert(error.message);
-        pokemonDisplay.style.display = "none"; // Hide the Pokémon card if not found
+        pokemonDisplay.style.display = "none"; 
     }
 }
